@@ -70,3 +70,17 @@
 - `id`  					       smallint NOT NULL *PK autoincrement*
 - `name` 				       varchar(200)
 
+**Города (city)**
+- `id`  					       smallint NOT NULL *PK autoincrement*
+- `name` 				       varchar(200)
+
+
+**Информация о найме (hr_links)**
+- `id` 					        int NOT NULL *PK autoincrement*
+- `employees_id`			 int NOT NULL *FK employees.id*
+- `startwork_date`  date
+- `salary_value` 		 decimal
+- `offices_id` 			  smallint NOT NULL *FK offices.id*
+- `divisions_id` 		 smallint NOT NULL *FK divisions.id*
+- `positions_id` 		 smallint NOT NULL *FK positions.id*
+
